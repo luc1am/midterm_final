@@ -5,6 +5,9 @@
 // Did they create an object? (10 points)
 // Includes at least one method (15 points)
 
+//files are created from:
+//https://www.gutenberg.org/files/1041/1041.txt
+//shakespeares sonnets
 
 var deets = {
   r: 200,
@@ -196,7 +199,7 @@ function prep_poem(lines, verbs, nouns,
           //print("x: "+end)
           // print(lines[i][j].substr(begin,stop));
           let rhymes = RiTa.rhymes(lines[i][j].substr(begin,stop-1));
-          lines[i][j] = rhymes[0];
+          lines[i][j] = rhymes[round(random(0,10))];
           // print(rhymes);
           // if (lines[i][j][end+2] =='n'){
           //   rhymes = RiTa.rhymes(
